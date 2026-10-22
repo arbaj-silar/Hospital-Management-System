@@ -1,0 +1,14 @@
+hospital:
+  message: "Configuration loaded from Config Server"
+  department: "Appointment Management"
+  
+spring:
+  application:
+    name: appointment-service
+
+  config:
+    import: "configserver:http://localhost:8888"
+
+  cloud:
+    config:
+      fail-fast: true
